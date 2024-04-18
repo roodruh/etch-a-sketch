@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Spice&display=swap);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(255, 192, 110);
+}
+
+#app-window {
+    border: solid 10px white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(255, 224, 113);
+}
+
+.title {
+    min-width: 100%;
+    text-align: center;
+    font-family: Bungee Spice;
+    font-size: 2.4rem;
+    color: white;
+}
+
+.title:hover {
+    color: rgb(255, 96, 96);
+}
+
+.button {
+    height: 50px;
+    width: 200px;
+    border-radius: 80px;
+    border: solid 5px rgb(56, 128, 66);
+    background-color: rgb(199, 224, 98);
+    font-family: Bungee;
+    font-size: 1.5rem;
+    color: rgb(56, 128, 66);
+}
+
+.button:hover {
+    color: rgb(199, 224, 98);
+    background-color: rgb(56, 128, 66);
+}
+
+#etch-a-sketch {
+    border: solid 5px rgb(255, 96, 96);
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    height: 25px;
+    width: 25px;
+    border: solid 1px rgb(255, 96, 96);
+}
+
+.cell:hover {
+    background-color: rgb(255, 96, 96)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
