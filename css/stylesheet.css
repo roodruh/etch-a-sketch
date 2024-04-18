@@ -31,15 +31,22 @@ body {
     color: rgb(255, 96, 96);
 }
 
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
 .button {
     height: 50px;
-    width: 200px;
+    width: 160px;
     border-radius: 80px;
     border: solid 5px rgb(56, 128, 66);
     background-color: rgb(199, 224, 98);
     font-family: Bungee;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: rgb(56, 128, 66);
+    flex-grow: 0;
 }
 
 .button:hover {

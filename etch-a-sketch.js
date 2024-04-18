@@ -10,10 +10,20 @@ title.setAttribute('class', 'title');
 app.appendChild(title);
 title.innerText = "Etch-a-Sketch";
 
+const buttonRow = document.createElement('div');
+buttonRow.setAttribute('class', 'button-row');
+app.appendChild(buttonRow);
+
 const gridButton = document.createElement('button');
 gridButton.setAttribute('class', 'button');
 gridButton.innerText = "New Grid!"
-app.appendChild(gridButton);
+buttonRow.appendChild(gridButton);
+
+
+const removeButton = document.createElement('button');
+removeButton.setAttribute('class', 'button');
+removeButton.innerText = "Delete Grid"
+buttonRow.appendChild(removeButton);
 
 const defaultGrid = document.createElement('div');
 defaultGrid.setAttribute('class', 'default-grid');
@@ -35,10 +45,13 @@ for(let i = 0; i < 16; i++) {
     }
 }
 
-gridButton.addEventListener('click', MouseEvent => generateGrid());
+// gridButton.addEventListener('click', e => {
+//     console.log(e);
+// })
+gridButton.addEventListener('click', e => generateGrid());
+gridButton.addEventListener('click', e => etchASketch.remove());
 
 function generateGrid() {
-
     var gridHeight = prompt('Enter height of grid: ');
     var gridLength = prompt('Enter length of grid: ');
 
@@ -57,4 +70,5 @@ function generateGrid() {
             row.appendChild(cell);
         }
     }
+    removeButton.addEventListener('click', e => etchASketch.remove());
 }
